@@ -8,6 +8,8 @@ const AWS = require('aws-sdk');
 const s3Zip = require('s3-zip');
 const XmlStream = require('xml-stream');
 
+require('dotenv').config();
+
 const bucket = process.env.awsBucket;
 const accessKeyId = process.env.awsAccessKeyId;
 const secretAccessKey = process.env.awsAccessKeySecret;
